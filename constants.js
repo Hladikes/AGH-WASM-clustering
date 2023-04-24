@@ -1,0 +1,7 @@
+export default {
+  SIZE: 750,
+  POINTS_COUNT: 200000,
+  CLUSTERS_COUNT: 12,
+  OFFSET: 10,
+  NUMBER_OF_ROUNDS: 20,
+}
