@@ -40,6 +40,8 @@ function showPopup(imageSrc) {
 
   const img = document.createElement('img')
   img.src = imageSrc
+  img.style.maxWidth = '750px'
+  img.style.width = '100%'
   img.style.border = '1px solid gray'
 
   container.appendChild(img)

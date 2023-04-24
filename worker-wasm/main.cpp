@@ -101,5 +101,9 @@ point* do_centroids(
     }
   }
 
+  delete[] points;
+  delete[] clusters;
+  delete[] sums;
+
   return points;
 }
