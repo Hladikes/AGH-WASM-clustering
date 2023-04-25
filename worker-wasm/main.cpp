@@ -22,15 +22,11 @@ uint32_t calculate_distance(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2) 
   return POW2(x2 - x1) + POW2(y2 - y1);
 }
 
-double crandom() {
+uint32_t random_range(uint32_t min, uint32_t max) {
   static std::mt19937 rd(std::random_device{}());
   static std::uniform_real_distribution<double> dist(0, 1);
 
-  return static_cast<double>(dist(rd));
-}
-
-uint32_t random_range(uint32_t min, uint32_t max) {
-  return crandom() * (max - min) + min;
+  return static_cast<double>(dist(rd)) * (max - min) + min;
 }
 
 void assign_to_clusters(
